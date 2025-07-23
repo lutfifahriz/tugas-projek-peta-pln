@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Peta Interaktif Pelanggan PLN</title>
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Peta Interaktif Pelanggan PLN</h1>
+  </header>
+
+  <!-- Search Bars -->
+  <div id="search-bar-top">
+    <input type="text" id="global-search" placeholder="Pencarian...." />
+  </div>
+
+  <div id="custom-search-container">
+    <input type="text" id="custom-search" placeholder="Cari ID Pelanggan / Titik Koordinat" />
+  </div>
+
+  <!-- Sidebar Info -->
+  <aside id="sidebar" class="hidden"></aside>
+
+  <!-- Map -->
+  <div id="map"></div>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-elevation/dist/leaflet-elevation.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
